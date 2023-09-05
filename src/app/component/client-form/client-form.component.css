@@ -1,0 +1,60 @@
+/* Amount - Form */
+div.form-amount {
+    margin: 21px;
+}
+div.form-amount input {
+    width: 50px;
+    margin: 0px 10px;
+}
+
+
+
+/* Size - Form */
+div.form-size {
+    display: flex;
+    margin: 21px;
+}
+
+div.size-radio-container {
+    display: flex;
+}
+
+label.size-radio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+label.size-radio input {
+    cursor: pointer;
+}
+
+
+/* Color - Form */
+div.form-color {
+    display: flex;
+    margin: 21px;
+}
+
+div.form-color select {
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+/* Type - Form */
+div.form-type {
+    display: flex;
+    margin: 21px;
+}
+
+div.form-type select {
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+
+/* Client Info */
+fieldset.client-info div {
+    margin: 21px;
+}

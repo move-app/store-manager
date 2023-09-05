@@ -1,0 +1,78 @@
+<!-- Afazeres
+
+    - Ajustar css geral
+    - Definir como será cor e estampa
+    - Campo de telefone com máscara js
+-->
+<form>
+    <fieldset>
+        <legend>Pedido</legend>
+        
+        <!-- Quantidade -->
+        <div class="form-amount">
+            <label>Quantidade: <input type="number" step="1" min="0"/></label>
+        </div>
+
+
+        <!-- Tamanho -->
+        <div class="form-size">
+            <label>Tamanho: </label>
+
+            <div class="size-radio-container">
+                <label class="size-radio">P <input type="radio" name="size"/></label>
+                <label class="size-radio">M <input type="radio" name="size"/></label>
+                <label class="size-radio">G <input type="radio" name="size"/></label>        
+                <label class="size-radio">GG <input type="radio" name="size"/></label>
+            </div>
+        </div>
+
+        <!-- Cor -->
+        <div class="form-color">
+            <label>Cor: </label>
+
+            <div class="color">
+                <select>
+                    <option value="preta">Preta</option>
+                    <option value="branca">Branca</option>
+                    <option value="verde">Verde</option>
+                </select>
+            </div>
+        </div>
+        
+        <!-- Estampa -->
+        <div class="form-type">
+            <label>Estampa: </label>
+
+            <div class="type">
+                <select>
+                    <option value="cpx1" selected>Capixaba 1</option>                    
+                </select>
+            </div>
+        </div>
+        
+        
+    </fieldset>
+
+    <fieldset class="client-info">
+        <legend>Informações do Cliente</legend>
+        
+        <!-- Nome -->
+        <div class="form-client-name">
+            <label>Nome: <input type="text"/></label>
+        </div>
+
+        <!-- Email -->
+        <div class="form-client-mail">
+            <label>Email: <input type="mail"/></label>
+        </div>
+
+        <!-- Phone -->
+        <div class="form-client-phone">
+            <label>Telefone: <input type="tel" (keydown)="formatPhone($event)"/></label>
+        </div>
+
+    </fieldset>
+
+    <button>Registrar Pedido</button>
+    <button>Limpar Formulário</button>
+</form>
